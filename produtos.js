@@ -926,6 +926,6 @@ let custoEstoque = produtos.reduce(
     acumulador + (produto.preco_compra * produto.estoque, 0),
 );
 console.log(custoEstoque.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
-)
+
 
 // let totalEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.estoque), 0);
