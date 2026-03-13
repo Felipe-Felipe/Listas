@@ -1,4 +1,4 @@
-let produtos = [
+export let produtos = [
   {
     id: 1,
     nome: "Coca-cola 2L",
@@ -929,3 +929,9 @@ console.log(custoEstoque.toLocaleString("pt-BR", { style: "currency", currency: 
 
 
 // let totalEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.estoque), 0);
+
+let estoque = produtos.filter((produto) => produto.estoque <= 50);
+console.table(estoque);
+
+let estoqueFind = produtos.find((produto) => produto.estoque <= 50);
+console.log(estoqueFind);
