@@ -921,17 +921,17 @@ export let produtos = [
 //let estoqueBaixo = produtos.filter (produto => produto.rotatividade == "alta" && produto.curva_abc === "A" && produto.estoque  <=50);
 //console.table(estoqueBaixo);
 
-let custoEstoque = produtos.reduce(
-  (acumulador, produto) =>
-    acumulador + (produto.preco_compra * produto.estoque, 0),
-);
-console.log(custoEstoque.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+// let custoEstoque = produtos.reduce(
+//   (acumulador, produto) =>
+//     acumulador + (produto.preco_compra * produto.estoque, 0),
+// );
+// console.log(custoEstoque.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
 
 
-// let totalEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.estoque), 0);
+// // let totalEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.estoque), 0);
 
-let estoque = produtos.filter((produto) => produto.estoque <= 50);
-console.table(estoque);
+// let estoque = produtos.filter((produto) => produto.estoque <= 50);
+// console.table(estoque);
 
-let estoqueFind = produtos.find((produto) => produto.estoque <= 50);
-console.log(estoqueFind);
+// let estoqueFind = produtos.find((produto) => produto.estoque <= 50);
+// console.log(estoqueFind);
