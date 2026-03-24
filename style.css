@@ -22,6 +22,7 @@ fieldset {
 
 #fieldsetFuncoes {
     width: 40%;
+    padding: 20px 10px;
 }
 
 #containerCurvaABC {
@@ -36,9 +37,26 @@ fieldset {
     
 }
 
+  .selecaoCurva:hover {
+    cursor: pointer;
+  }
+
 #containerDisplay {
     display: grid;
     grid-template-columns: 1fr 3fr max-content max-content;
     padding: 10px 20px;
     gap: 10px;
+    overflow: auto;
+    height: 90dvh;
+}
+
+.containers {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px 0px;
+}
+
+.pesquisador
+{
+    border: 1px solid black;
 }
